@@ -21,11 +21,6 @@ class Gem::Platform
     match_platforms?(platform, Gem.platforms)
   end
 
-  class << self
-    extend Gem::Deprecate
-    rubygems_deprecate :match, "Gem::Platform.match_spec?"
-  end
-
   def self.match_platforms?(platform, platforms)
     platforms.any? do |local_platform|
       platform.nil? or
@@ -124,10 +119,6 @@ class Gem::Platform
     else
       raise ArgumentError, "invalid argument #{arch.inspect}"
     end
-  end
-
-  def inspect
-    "%s @cpu=%p, @os=%p, @version=%p>" % [super[0..-2], *to_a]
   end
 
   def to_a

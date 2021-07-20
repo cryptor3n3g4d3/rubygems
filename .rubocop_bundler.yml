@@ -373,6 +373,9 @@ Layout/SpaceInsideArrayPercentLiteral:
 Layout/SpaceInsideBlockBraces:
   Enabled: true
   SpaceBeforeBlockParameters: false
+  Exclude:
+  - bundler/lib/bundler/templates/Gemfile
+  - bundler/lib/bundler/templates/gems.rb
 
 Layout/SpaceInsideHashLiteralBraces:
   Enabled: true
@@ -489,6 +492,9 @@ Performance/UriDefaultParser:
 Security/JSONLoad:
   Enabled: true
 
+Security/Open:
+  Enabled: true
+
 # Style
 
 Style/Alias:
@@ -572,6 +578,9 @@ Style/Encoding:
   Enabled: true
 
 Style/EndBlock:
+  Enabled: true
+
+Style/EvalWithLocation:
   Enabled: true
 
 Style/EvenOdd:

@@ -89,6 +89,9 @@ Lint/DuplicateMethods:
 Lint/ParenthesesAsGroupedExpression:
   Enabled: true
 
+Layout/EndAlignment:
+  Enabled: true
+
 Naming/HeredocDelimiterCase:
   Enabled: true
 
@@ -103,10 +106,16 @@ Performance/StartWith:
 Performance/StringReplacement:
   Enabled: true
 
+Security/Open:
+  Enabled: true
+
 Style/Encoding:
   Enabled: true
   Exclude:
     - test/rubygems/specifications/foo-0.0.1-x86-mswin32.gemspec
+
+Style/EvalWithLocation:
+  Enabled: true
 
 Style/IfInsideElse:
   Enabled: false
@@ -121,6 +130,9 @@ Style/MultilineIfThen:
   Enabled: true
 
 Style/MutableConstant:
+  Enabled: true
+
+Style/NilComparison:
   Enabled: true
 
 Style/BlockDelimiters:
